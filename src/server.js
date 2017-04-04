@@ -5,7 +5,7 @@ const inert = require('inert');
 const routes = require('./routes');
 
 // create a new server and open a connection
-const server = new hapi.Server();
+const server = new hapi.Server(+process.env.PORT, '0.0.0.0');
 
 server.connection({
   host: 'localhost',
