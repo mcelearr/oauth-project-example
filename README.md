@@ -2,14 +2,15 @@
 
 #### A CMS (content management system) app that keeps track of the kitty for the guest house.
 
-Find us on [Heroku](#)
+Find us on [Heroku](https://kittyio.herokuapp.com/)
 
 Or run locally:
-1. ```git clone https://github.com/FACN1/week7-rm-rf-mario.git
-npm```
-2. ```cd week7-rm-rf-mario.git```
-3. ```npm install```
-4. ```npm run```
+```bash
+git clone https://github.com/FACN1/week7-rm-rf-mario.git
+cd week7-rm-rf-mario.git
+npm install
+npm run
+```
 
 ## User Stories
 
@@ -54,14 +55,12 @@ User Interface:
 
 Server:
 - Routes:
-  + '/list' request to server for recent transactions
-  + '/update' directs to form view
 
 Database:
-- '/list' return recent transactions
-- '/update' post transaction to the server, increase/decrease kitty
 
-Table: current total, transaction value, name, id
+| ID  | DATE | NAME | TRANSACTION_VALUE |
+| ------------- | ------------- | ------------- | ------------- |
+| SERIAL PRIMARY KEY | DEFAULT GETDATE()  |  VARCHAR(200) NOT NULL  |  DECIMAL NOT NULL
 
 Handlebars:
 
