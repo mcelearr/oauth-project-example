@@ -1,5 +1,5 @@
 const hapi = require('hapi');
-//packegae of hapi for serving static file
+//package of hapi for serving static file
 const inert = require('inert');
 
 const routes = require('./routes');
@@ -15,7 +15,7 @@ server.connection({
 server.register(inert, (err) => {
   if (err) throw err;
   //link the routes to our server
-  //each route have his handler
+  //each route has a handler
   server.route(routes);
 })
 
