@@ -9,7 +9,7 @@ Or run locally:
 git clone https://github.com/FACN1/week7-rm-rf-mario.git
 cd week7-rm-rf-mario.git
 npm install
-npm run
+npm start
 ```
 
 ## User Stories
@@ -50,19 +50,18 @@ week7-rm-rf-mario
 ## App Logic
 User Interface:
 - Main: Go to the page and automatically render last 10 transactions, and total in the kitty.
-- Add button: Takes you to a form to input money in the kitty.
-- Withdraw: Takes you to a form to withdraw money.
+- Transaction: Takes you to a form to input or withdraw money in the kitty.
 
 Server:
 - Routes:
 
-Database:
+Handlebars:
+
+## Database Schema
 
 | ID  | DATE | NAME | TRANSACTION_VALUE |
 | ------------- | ------------- | ------------- | ------------- |
 | SERIAL PRIMARY KEY | DEFAULT GETDATE()  |  VARCHAR(200) NOT NULL  |  DECIMAL NOT NULL
-
-Handlebars:
 
 ## Stretch Goals
 - Validate with Joi

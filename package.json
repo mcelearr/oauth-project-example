@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/start.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/FACN1/week7-rm-rf-mario/issues"
   },
-  "homepage": "https://github.com/FACN1/week7-rm-rf-mario#readme"
+  "homepage": "https://github.com/FACN1/week7-rm-rf-mario#readme",
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0"
+  }
 }
