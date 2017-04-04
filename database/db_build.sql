@@ -4,9 +4,9 @@ DROP TABLE IF EXISTS kitty cascade;
 
 CREATE TABLE kitty (
   id SERIAL PRIMARY KEY,
-  transaction_date DEFAULT GETDATE(),
+  transaction_date DATE DEFAULT CURRENT_DATE,
   name VARCHAR(200) NOT NULL,
-  transaction_value INT NOT NULL,
+  transaction_value INT NOT NULL
 );
 
 INSERT INTO kitty (name, transaction_value)
