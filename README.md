@@ -61,7 +61,7 @@ Handlebars:
 
 | ID  | DATE | NAME | TRANSACTION_VALUE |
 | ------------- | ------------- | ------------- | ------------- |
-| SERIAL PRIMARY KEY | DEFAULT GETDATE()  |  VARCHAR(200) NOT NULL  |  DECIMAL NOT NULL
+| SERIAL PRIMARY KEY | DEFAULT GETDATE()  |  VARCHAR(200) NOT NULL  |  INT NOT NULL
 
 ## Stretch Goals
 - Validate with Joi
