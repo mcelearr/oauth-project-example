@@ -1,5 +1,7 @@
 const handler = (request, reply) => {
-  reply.view('form');
+  reply.view('form', {
+    title: 'Update'
+  });
 }
 
 module.exports = {
