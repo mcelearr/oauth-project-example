@@ -1,9 +1,12 @@
 <section class="list-wrap">
-  <h2>Current Total: {{total}}</h2>
-  <ul>
+  <h2 class="current-total">{{total}}</h2>
+  <ul class="transaction-list">
     {{#each rows}}
-      <li>{{name}}</li>
-      <li>{{transaction_value}}</li>
+      <li>
+        <span class="li-name">{{name}}</span>
+        -
+        <span class="li-value">{{transaction_value}}</span>
+      </li>
     {{/each}}
   </ul>
 </section>

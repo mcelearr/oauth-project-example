@@ -57,7 +57,7 @@ body {
   background-color: #f0f5f5;
 }
 
-h1 {
+.page-title {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -71,8 +71,9 @@ h1 {
 	justify-content: center;
 	padding: 0.5rem;
 	color: white;
-	background-color: #719698;
+	background-color: #336699;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+	z-index: 1;
 }
 
 .nav-button {
@@ -90,7 +91,47 @@ h1 {
 }
 
 .nav-button:hover {
-	/*background-color: white;*/
-	/*color: black;*/
 	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.list-wrap {
+	text-align: center;
+}
+
+.current-total {
+	font: 2rem sans-serif;
+	color: gray;
+	background-color: lightgray;
+	padding: 10px 0;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+}
+
+.transaction-list {
+	margin: 10px 0;
+	text
+}
+
+.transaction-list li:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+ul li {
+	display: flex;
+	justify-content: center;
+	padding: 5px 0;
+}
+
+li span {
+	display: flex;
+	font: 1rem sans-serif;
+	width: 1000px;
+	padding: 0 30px;
+}
+
+.li-name {
+	justify-content: flex-end;
+}
+
+.li-value {
+	justify-content: flex-start;
 }
