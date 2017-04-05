@@ -2,5 +2,6 @@
 module.exports = [
   require('./static.js'),
   require('./form.js'),
-  require('./transact.js')
+  require('./transact.js'),
+  require('./home.js')
 ]
