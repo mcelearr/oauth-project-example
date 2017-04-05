@@ -1,6 +1,6 @@
 const handler = (request, reply) => {
   reply.view('form', {
-    title: 'ADD / WITHDRAW'
+    title: 'Update'
   });
 }
 
