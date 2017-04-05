@@ -8,4 +8,11 @@ dbQueries.postTransaction = function(connPool, data, callback) {
   );
 }
 
+dbQueries.retrieveTransactions = function(connPool, callback) {
+  connPool.query(
+    'SELECT name, transaction_value FROM kitty',
+    callback
+  );
+}
+
 module.exports = dbQueries;
