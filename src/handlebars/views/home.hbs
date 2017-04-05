@@ -1,6 +1,8 @@
 <section class="list-wrap">
-  <ul class="data-list">
-    <li class="data-value">Mario the best singer in the universe</li>
-    <li class="data-value">125</li>
+  <ul>
+    {{#each rows}}
+      <li>{{name}}</li>
+      <li>{{transaction_value}}</li>
+    {{/each}}
   </ul>
 </section>
