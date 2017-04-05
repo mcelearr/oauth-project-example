@@ -10,7 +10,7 @@ dbQueries.postTransaction = function(connPool, data, callback) {
 
 dbQueries.retrieveTransactions = function(connPool, callback) {
   connPool.query(
-    'SELECT name, transaction_value FROM kitty',
+    'SELECT name, transaction_value, transaction_date FROM kitty ORDER BY transaction_date DESC',
     callback
   );
 }
