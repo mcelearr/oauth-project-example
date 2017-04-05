@@ -2,7 +2,7 @@
   "name": "week7-rm-rf-mario",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "start.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/start.js"
@@ -23,5 +23,8 @@
     "inert": "^4.2.0",
     "pg": "^6.1.5",
     "url": "^0.11.0"
+  },
+  "engines": {
+    "node": "6.10.1"
   }
 }
