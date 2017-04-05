@@ -1,6 +1,9 @@
 const hapi = require('hapi');
 //package of hapi for serving static file
 const inert = require('inert');
+const vision = require('vision');
+const path = require('path');
+
 
 const routes = require('./routes');
 
@@ -11,11 +14,23 @@ server.connection({
   port: process.env.PORT || 9000
 })
 
-server.register(inert, (err) => {
+server.register([inert, vision], (err) => {
   if (err) throw err;
   //link the routes to our server
   //each route has a handler
   server.route(routes);
+
+  server.views({
+    engines: {
+      hbs: require('handlebars')
+    },
+    relativeTo: path.join(__dirname, 'handlebars'),
+    layoutPath: './layouts',
+    layout: 'default',
+    path: './views',
+    partialsPath: './partials',
+    helpersPath: './helpers'
+  })
 })
 
 module.exports = server;
