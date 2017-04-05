@@ -1,6 +1,6 @@
 const handler = (request, reply) => {
   let data  = {
-    title: 'Kitty I/O'
+    title: 'KITTY I/O'
   }
   reply.view('home', data)
 }

@@ -3,7 +3,7 @@ module.exports = {
   path: '/form',
   handler: (request, reply) => {
     reply.view('form', {
-      total: 125
+      title: 'ADD / WITHDRAW'
     });
   }
 }
