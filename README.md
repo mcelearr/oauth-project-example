@@ -69,11 +69,16 @@ Handlebars:
 
 ## ToDo
 #### Day 1
-- [ ] Set up server (Jack/Hiba)
-- [ ] Set up database (Mario/Lawson)
-- [ ] Deploy to Heroku (Mario/Lawson)
+- [x] Set up server (Jack/Hiba)
+- [x] Set up database (Mario/Lawson)
+- [x] Deploy to Heroku (Mario/Lawson)
 
 #### Day 2
+- [x] set up handlebars
+- [x] populate layouts/header.hbs
+- [ ] set up home route
+- [ ] set up form route
+- [ ] add a header partial
 
 
 ## Style Guide
