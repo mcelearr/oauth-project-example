@@ -1,6 +1,6 @@
 const joi = require('joi');
 
-dbQueries = {};
+let dbQueries = {};
 
 dbQueries.postTransaction = function(connPool, data, callback) {
   const schema = joi.object({
