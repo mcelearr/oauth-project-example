@@ -1,13 +1,25 @@
-
-
 let dbQueries = {};
 
+const joi = require('joi');
+
 dbQueries.postTransaction = function(connPool, data, callback) {
-  connPool.query(
-    'INSERT INTO kitty (name, transaction_value) VALUES ($1, $2)',
-    [data.name, data.amount],
-    callback
-  );
+  const schema = joi.object({
+    name: joi.string().regex(/^[a-zA-Z]{3,40}$/),
+    amount: joi.number().integer()
+  })
+
+  joi.validate({name: data.name, amount: data.amount}, schema, (err, validated) => {
+    if (err) {
+      callback('Invalid Data');
+      return;
+    }
+
+    connPool.query(
+      'INSERT INTO kitty (name, transaction_value) VALUES ($1, $2)',
+      [validated.name, validated.amount],
+      callback
+    );
+  })
 }
 
 dbQueries.retrieveTransactions = function(connPool, callback) {
