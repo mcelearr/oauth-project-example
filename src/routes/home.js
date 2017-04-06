@@ -5,10 +5,10 @@ const NUM_OF_RESULTS = 50;
 
 const handler = (request, reply) => {
   dbQueries.retrieveTransactions(connPool, (err, response) => {
-    let total = 0;
-    response.rows.forEach(function(row) {
-      total += row.transaction_value;
-    });
+    // Sum the transactions in the kitty
+    let total = response.rows.reduce(function(acc, row) {
+      return acc + row.transaction_value;
+    }, 0);
 
     let data  = {
       title: 'Kitty I/O',
