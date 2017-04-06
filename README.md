@@ -42,7 +42,7 @@ week7-rm-rf-mario
 
 ## App Logic
 - User Interface:
-  - Main: go to the page and automatically render last n transactions, and total in the kitty
+  - Main: go to the page and automatically render the last `n` transactions, and the total in the kitty
   - Update: takes you to a form to add to or withdraw money from the kitty
 
 ## Database Schema
