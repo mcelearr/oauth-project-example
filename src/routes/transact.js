@@ -8,10 +8,11 @@ const handler = (request, reply) => {
     }
     reply.redirect('/');
   });
-}
+};
 
 module.exports = {
+  config: { auth: 'jwt' },
   method: 'POST',
   path: '/transact',
-  handler: handler
-}
+  handler
+};

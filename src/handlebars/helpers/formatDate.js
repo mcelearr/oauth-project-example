@@ -1,5 +1,1 @@
-module.exports = (date) => {
-  if (date) {
-    return date.toDateString();
-  }
-}
+module.exports = date => date.toDateString();
