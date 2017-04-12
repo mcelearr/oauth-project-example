@@ -5,6 +5,7 @@ const homeRoute = require('./home.js');
 const loginRoute = require('./login.js');
 const authRoute = require('./auth.js');
 const authenticatedRoute = require('./authenticated.js');
+const logoutRoute = require('./logout.js');
 
 module.exports = [
   staticRoute,
@@ -13,5 +14,6 @@ module.exports = [
   homeRoute,
   loginRoute,
   authRoute,
-  authenticatedRoute
+  authenticatedRoute,
+  logoutRoute
 ];

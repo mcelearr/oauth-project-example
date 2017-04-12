@@ -84,6 +84,13 @@ body {
 	text-align: center;
 }
 
+.login {
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	margin: 5px;
+}
+
 .avatar img{
 	width: 40px;
 	border-radius: 50%;

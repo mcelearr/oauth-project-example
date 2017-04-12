@@ -2,15 +2,16 @@
   <div class="header-wrap">
     <a href="/" class="nav-button fa fa-home" style="font-size:30px"></a>
     <h1 class="page-title">{{upperCase title}}</h1>
-    {{#if authenticated}}
-      <a href="/form" class="nav-button fa fa-money" style="font-size:30px"></a>
-    {{else}}
-      <a href="/login" class="nav-button fa fa-github" style="font-size:30px"></a>
-    {{/if}}
+    <a href="/form" class="nav-button fa fa-money" style="font-size:30px"></a>
   </div>
   <div class="avatar">
-    <img src="{{githubImage}}" alt="github image">
-    <span>{{githubUsername}}</span>
-    <a href="/logout" class="log-out">Log out?</a>
+    {{#if authenticated}}
+      <img src="{{githubImage}}" alt="github image">
+      <span>{{githubUsername}}</span>
+      <a href="/logout" class="log-out">Log out?</a>
+    {{else}}
+      <a href="/login" class="fa fa-github login" style="font-size:40px"></a>
+      <a href="/login" class="log-out">Log in</a>
+    {{/if}}
   </div>
 </header>
