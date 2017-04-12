@@ -21,8 +21,8 @@ server.connection({
 server.register([inert, vision, hapiAuthJwt2], (err) => {
   if (err) throw err;
 
-  const validate = (token, validateRequest, callback) => {
-    if (!token) {
+  const validate = (decodedToken, validateRequest, callback) => {
+    if (!decodedToken) {
       return callback(null, false);
     }
     return callback(null, true);

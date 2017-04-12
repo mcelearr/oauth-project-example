@@ -76,6 +76,38 @@ body {
 	z-index: 1;
 }
 
+.avatar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 18px 20px 0 0;
+	text-align: center;
+}
+
+.avatar img{
+	width: 40px;
+	border-radius: 50%;
+}
+
+.avatar span {
+	color: white;
+	font: 0.8rem sans-serif;
+	display: block;
+}
+
+.log-out {
+	margin-top: 4px;
+	color: white;
+	font: 0.6rem sans-serif;
+	display: block;
+}
+
+@media (max-width: 600px) {
+	.avatar {
+		display: none;
+	}
+}
+
 .nav-button {
 	display: flex !important;
 	justify-content: center;
