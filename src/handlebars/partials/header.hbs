@@ -1,8 +1,12 @@
 <header>
   <div class="header-wrap">
+    {{#if authenticated}}
     <a href="/" class="nav-button fa fa-home" style="font-size:30px"></a>
+    {{/if}}
     <h1 class="page-title">{{upperCase title}}</h1>
+    {{#if authenticated}}
     <a href="/form" class="nav-button fa fa-money" style="font-size:30px"></a>
+    {{/if}}
   </div>
   <div class="avatar">
     {{#if authenticated}}

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/start.js",
-    "dev": "nodemon src/start.js"
+    "dev": "node_modules/.bin/nodemon src/start.js",
+    "test": "node tests/tests.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "jsonwebtoken": "^7.3.0",
     "pg": "^6.1.5",
     "request": "^2.81.0",
+    "tape": "^4.6.3",
     "url": "^0.11.0",
     "vision": "^4.1.1"
   },

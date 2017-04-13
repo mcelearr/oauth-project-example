@@ -8,7 +8,13 @@ const fs = require('fs');
 
 const routes = require('./routes');
 
-const server = new hapi.Server();
+const server = new hapi.Server({
+  connections: {
+    state: {
+      isSameSite: 'Lax'
+    }
+  }
+});
 
 server.connection({
   port: process.env.PORT || 9000,

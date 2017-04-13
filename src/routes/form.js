@@ -16,7 +16,7 @@ const handler = (request, reply) => {
 module.exports = {
   config: {
     auth: {
-      mode: 'optional',
+      mode: 'required',
       strategy: 'jwt'
     }
   },
