@@ -4,5 +4,5 @@
 git clone https://github.com/mcelearr/oauth-project-example.git
 cd oauth-project-example
 npm install
-npm start
+npm run dev
 ```
