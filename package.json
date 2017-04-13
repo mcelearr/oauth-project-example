@@ -4,7 +4,8 @@
   "description": "",
   "main": "start.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "npm run lint && npm run test",
+    "prepush": "npm run lint && npm run test",
     "start": "node src/start.js",
     "dev": "node_modules/.bin/nodemon src/start.js",
     "test": "node tests/tests.js"
@@ -39,6 +40,7 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.1.3",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "husky": "^0.13.3"
   }
 }
